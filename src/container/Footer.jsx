@@ -8,7 +8,8 @@ const useStyles = makeStyles((theme) =>
       flexGrow: 1,
     },
     footer: {
-      margin: theme.spacing.unit * 2,
+      backgroundColor: "coral",
+      padding: theme.spacing.unit * 2,
       textAlign: "center",
     },
   })
