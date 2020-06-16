@@ -31,14 +31,6 @@ export default function Listado() {
 
   return (
     <Paper>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      />
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      />
       {error ? (
         <h2>{`Houston tenemos un error: ${error}`}</h2>
       ) : congres ? (
