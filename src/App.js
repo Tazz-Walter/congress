@@ -6,7 +6,7 @@ import Main from "./container/Main";
 import Header from "./container/Header";
 import Footer from "./container/Footer";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Header />
@@ -20,5 +20,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;

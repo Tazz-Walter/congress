@@ -11,8 +11,10 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "material-table": "latest",
     "axios": "^0.19.2",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.20.0",
+    "material-table": "latest",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -25,7 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier --write './src/*.{js,jsx,json,css,ts,tsx}'"
+    "prettier": "prettier --write './src/*.{js,jsx,json,css,ts,tsx}'",
+    "lint": "eslint src/**/*.js src/**/*.jsx"
   },
   "eslintConfig": {
     "extends": "react-app"
