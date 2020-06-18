@@ -1,33 +1,22 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import MaterialTable from "material-table";
 import Paper from "@material-ui/core/Paper";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import { getListado } from "../utils/api";
 
 export default function Listado() {
   const [congres, setCongres] = useState<any>();
   const [error, setError] = useState();
 
   useEffect(() => {
-    getListado();
-  }, []);
-
-  const getListado = (congres?: Number, chamber?: String) => {
-    const congresVal = congres ? congres : 116;
-    const chamberVal = chamber ? chamber : "senate";
-    axios.defaults.headers.common["X-API-Key"] =
-      "6oKkP2d22TejcKPNH3Zst2QPp0sCjhtMD5FsTMgo";
-    axios
-      .get(
-        `https://api.propublica.org/congress/v1/${congresVal}/${chamberVal}/members.json`
-      )
+    getListado()
       .then(({ data }) => {
         setCongres(data.results[0]);
       })
       .catch((error) => {
         setError(error);
       });
-  };
+  }, []);
 
   const columns = [
     { title: "Name", field: "first_name" },
