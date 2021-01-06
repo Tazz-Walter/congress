@@ -16,7 +16,7 @@
     "@types/react": "^16.9.38",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.20.0",
     "material-table": "latest",
